@@ -1,8 +1,8 @@
 public class Solution {
     public IList<bool> KidsWithCandies(int[] candies, int extraCandies) {
-       int mostCandies = candies.Max();
+       int maxcandies = candies.Max();
     return candies.Select(
-        candyAmount => candyAmount + extraCandies >= mostCandies
+        candyAmount => candyAmount + extraCandies >= maxcandies
     ).ToList();
     }
 }
