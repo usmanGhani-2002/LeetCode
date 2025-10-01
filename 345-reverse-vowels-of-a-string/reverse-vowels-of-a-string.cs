@@ -5,16 +5,12 @@ public class Solution {
         string vowels = "aeiouAEIOU";
 
         while (left < right) {
-            // Move left pointer until it finds a vowel
             while (left < right && !vowels.Contains(chars[left])) {
                 left++;
             }
-            // Move right pointer until it finds a vowel
             while (left < right && !vowels.Contains(chars[right])) {
                 right--;
             }
-
-            // Swap vowels
             if (left < right) {
                 char temp = chars[left];
                 chars[left] = chars[right];
