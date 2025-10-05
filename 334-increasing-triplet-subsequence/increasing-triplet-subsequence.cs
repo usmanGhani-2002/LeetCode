@@ -5,11 +5,11 @@ public class Solution {
 
         foreach (int num in nums) {
             if (num <= first) {
-                first = num;         // update the smallest so far
+                first = num;       
             } else if (num <= second) {
-                second = num;        // update the second smallest
+                second = num;   
             } else {
-                // If we get here, it means: first < second < num
+               
                 return true;
             }
         }
